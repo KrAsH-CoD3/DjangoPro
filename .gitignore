@@ -1,1 +1,3 @@
-/env
+env
+.vscode
+# mysite\users\__pycache__

@@ -4,7 +4,7 @@ from .models import Products
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Hi, This is this index page. This is gonna be great!")
+    return HttpResponse("Hi, This is this index page. This is gonna be great!<br/> Click here to go <a href='products'>Product<a/>")
 
 def products(request):
     products = Products.objects.all()
