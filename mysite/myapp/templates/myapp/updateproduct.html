@@ -7,15 +7,15 @@
         {% csrf_token %}
         <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="">Product Name</label>
-            <input class="shadow apprearance-none border round py-2 px-3 mr-10 text-gray-700" type="text" class="" placeholder="Name" name="iPhone" value="{{product.name}}" id="name">
+            <input class="shadow apprearance-none border round py-2 px-3 mr-10 text-gray-700" type="text" class="" placeholder="Name" name="name" id="name" value="{{product.name}}">
         </div>
         <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="">Product Price</label>
-            <input class="shadow apprearance-none border round py-2 px-3 mr-10 text-gray-700" type="text" placeholder="Price" name="800" value="{{product.price}}" id="price">
+            <input class="shadow apprearance-none border round py-2 px-3 mr-10 text-gray-700" type="text" placeholder="Price" name="price" id="price" value="{{product.price}}">
         </div>
         <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="">Product Description</label>
-            <input class="shadow apprearance-none border round py-2 px-3 mr-10 text-gray-700" type="text" placeholder="Desc" name="This is an iPhone" value="{{product.desc}}" id="desc">
+            <input class="shadow apprearance-none border round py-2 px-3 mr-10 text-gray-700" type="text" placeholder="Desc" name="desc" id="desc" value="{{product.desc}}">
         </div>
         <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="">Product Image</label>
