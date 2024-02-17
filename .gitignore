@@ -1,3 +1,4 @@
 env
 .vscode
+mysite\myapps\__pycache__
 mysite\users\__pycache__
