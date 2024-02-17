@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'myapp/styles.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyApp Title</title>
+</head>
+<body>
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a class="flex items-center px-2 py-4" href="#">
+                            <img class="h-8 w-8" src="{% static 'myapp/images/shopping.png' %}" alt="">
+                            <span class="text-gray-500 font-semibold text-lg">Buy & Sell</span>
+                        </a>
+                    </div>
+                    <div class="items-center flex space-x-1">
+                        <a class="py-4 px-2 text-gray-900 font-semibold text-lg border-b-4 border-green-500" href="#">Home</a>
+                        <a class="py-4 px-2 text-gray-900 font-semibold text-lg" href="#">Products</a>
+                        <a class="py-4 px-2 text-gray-900 font-semibold text-lg" href="#">About Us</a>
+                        <a class="py-4 px-2 text-gray-900 font-semibold text-lg" href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}
+
+    {% endblock %}
+    
+</body>
+</html>
