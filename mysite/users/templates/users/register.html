@@ -10,13 +10,21 @@
                 <div class="shadow apprearance-none border rounded py-2 px-3 mr-10 text-gray-700 ">
                     {{ form.username }}
                 </div>
-            </div>
-            
-            <div class="mb-2 mx-10">
+
+            {% comment %} </div>
+            <div class="mb-2 mx-10"> {% endcomment %}
+
                 <label class="block text-gray-700 text-lg font-bold mb-2" for="">E-mail</label>
                 <div class="shadow apprearance-none border rounded py-2 px-3 mr-10 text-gray-700 ">
                     {{ form.email }}
-                </div>z</label>
+                </div>
+                
+                <label class="block text-gray-700 text-lg font-bold mb-2" for="">password</label>
+                <div class="shadow apprearance-none border rounded py-2 px-3 mr-10 text-gray-700 ">
+                    {{ form.password1 }}
+                </div>
+
+                <label class="block text-gray-700 text-lg font-bold mb-2" for="">password again</label>
                 <div class="shadow apprearance-none border rounded py-2 px-3 mr-10 text-gray-700 ">
                     {{ form.password2 }}
                 </div>
